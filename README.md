@@ -43,7 +43,7 @@ The goal of this project is to mirror the functionality of the TypeScript librar
 ## Audio Peripherals and Bluetooth
 By default, the `HiFiSpatialAudio` Swift package will automatically use whatever stereophonic headphones or AirPods that may be connected by wire or by Bluetooth, using the Apple-defined behavior of “last peripheral connected, wins”. If there is no such stereo peripheral connected, the two speakers on the phone are used, where the “bottom” speaker is the left channel, and the “top” speaker is the right channel. The phone microphone is used.
 
-The constructor for the `HiFiCommunicator` object also accepts a boolean named argument called `echoCancellingVoiceProcessingInMono`, which instead uses hardware echo cancellation and automatic gain control, but the ouput is monophonic and of “speech” quality. In this mode, wireless peripherals are connected via the “hands-free” Bluetooth mode. In this mode, if the wireless hardware contains a microphone, that microphone will be used for audio input.
+The constructor for the `HiFiCommunicator` object also accepts a boolean named argument called `echoCancellingVoiceProcessingInMono`, which instead uses hardware echo cancellation and automatic gain control, but the output is monophonic and of “speech” quality. In this mode, wireless peripherals are connected via the “hands-free” Bluetooth mode. In this mode, if the wireless hardware contains a microphone, that microphone will be used for audio input.
 
 # Other Information
 
